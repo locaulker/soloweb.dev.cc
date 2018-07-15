@@ -1,0 +1,1170 @@
+/* *********************************************
+    Default Theme
+    --------------------------------------------
+    Google Fonts: Raleway & Open Sans
+    --------------------------------------------
+    Color Scheme:
+      Moon Yellow:                #F4C613
+      Black Russian(Grey):        #212226
+      White Smoke:                #F4F4F4
+      White:                      #FFFFFF
+      Black:                      #000000
+    --------------------------------------------
+01. Global/Generic Styles: html, body
+02. Preloader: (Animated Gif: https://loading.io)
+03. Home: Hero Video
+    03-1. Vertically Centering Elements
+    03-2. Styling the Elements
+04. Buttons
+05. Content Boxes
+06. Vertical & Horizontal Headings
+07. Section: About
+08. Section: Team
+09. Section: Team Slider Buttons
+10. Section: Skillset
+11. Section: Statement
+12. Section: Services
+13. Section: Services 02 with Responsive Tabs
+14. Section: Portfolio
+15. Section: Testimonials
+16. Section: Pricing Table
+17. Section: Stats
+18. Section: Clients
+19. Section: Blog
+********************************************* */
+/* *********************************************
+01. Global/Generic Styles: html, body
+********************************************* */
+html, body {
+  height: 100%;
+  /* cursor: pointer; */
+}
+
+body {
+  color: #212226;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section {
+  background: #fff;
+  overflow: hidden;
+}
+
+/* *********************************************
+02. Preloader: (Animated Gif: https://loading.io)
+********************************************* */
+#preloader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#status {
+  background-image: url("../img/preloader/preloader.gif");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  /* border-radius: 35px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+}
+
+/* *********************************************
+03. Home: Hero Video
+********************************************* */
+#home {
+  background: none;
+  /* height: 100%; */
+  height: 100vh;
+  /* vh = viewport height */
+}
+
+#home-bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /* Fallback Styles */
+  background-image: url("../video/soloweb.jpg") no-repeat;
+  background-size: cover;
+}
+
+#home-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 100vw;
+  /* vw = viewport width */
+  height: 100vh;
+  /* vh = viewport height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* *******************************
+  03-1.  Vertically Centering Elements
+    -------------------------------- */
+#home-content {
+  /* parent element */
+  width: 100vw;
+  height: 100vh;
+  display: table;
+}
+
+#home-content-inner {
+  /* child element */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* *******************************
+  03-2. Styling the Elements
+  ---------------------------------- */
+#home-heading h1 {
+  color: #fff;
+  font-size: 4.0625rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+}
+
+#home-heading h1 span {
+  color: #F4C613;
+  font-weight: 500;
+}
+
+#home-text p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 8px 0 30px 0;
+}
+
+/* **********************************
+04. Buttons 
+************************************* */
+.btn-general {
+  font-family: "Raleway", sans-serif;
+  border-radius: 28px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 6px;
+  padding: 12px 46px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-home {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+  color: #fff;
+  background-color: #F4C613;
+  border: 1px solid #F4C613;
+}
+
+/* button-yellow */
+.btn-yellow {
+  color: #fff;
+  background-color: #F4C613;
+  border: 1px solid #F4C613;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+  color: #F4C613;
+  background-color: #fff;
+  border: 1px solid #F4C613;
+}
+
+/* button-white */
+.btn-white {
+  color: #212226;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  color: #fff;
+  background-color: #212226;
+  border: 1px solid #212226;
+}
+
+/* ********* Arrow Down ******* */
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  margin-left: -1rem;
+  z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:hover {
+  color: #F4C613;
+}
+
+/* *********************************************
+05. Content Boxes
+********************************************* */
+.content-box-lg {
+  padding: 12rem 0;
+}
+
+.content-box-md {
+  padding: 10rem 0;
+}
+
+.content-box-sm {
+  padding: 9rem 0;
+}
+
+/* *********************************************
+06. Vertical & Horizontal Headings
+********************************************* */
+.vertical-heading h5 {
+  color: #F4C613;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: relative;
+  top: 66px;
+  left: -52px;
+}
+
+.horizontal-heading h2,
+.vertical-heading h2 {
+  font-size: 2.9rem;
+  font-weight: 100;
+  line-height: 4.5rem;
+}
+
+.vertical-heading h2 {
+  margin: 0 0 0 30px;
+}
+
+.horizontal-heading {
+  margin-bottom: 8rem;
+}
+
+.horizontal-heading h5 {
+  font-size: 1.6rem;
+  color: #F4C613;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.horizontal-heading h2 {
+  margin: 0;
+}
+
+/* *********************************************
+07. Section: About
+********************************************* */
+/* *********Part 01 ******* */
+#about-right p:first-child {
+  margin-bottom: 3rem;
+}
+
+#about-bottom {
+  margin-top: 6rem;
+}
+
+#about-bottom img {
+  margin: 0 auto;
+  /* border: 1px dashed rgba(0, 128, 128, 0.5); */
+}
+
+/* ********* About: Part 02 ******* */
+#about-02 {
+  background-color: #F4F4F4;
+}
+
+.about-item {
+  background-color: #fff;
+  padding: 8rem 3rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-item i {
+  font-size: 4.2rem;
+  margin: 0;
+}
+
+.about-item h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-item hr {
+  width: 4.5rem;
+  height: .2rem;
+  background-color: #F4C613;
+  margin: 0 auto;
+  border: none;
+}
+
+.about-item p {
+  margin-top: 2rem;
+}
+
+/* ********* About Part 02 - hover ******* */
+.about-item:hover {
+  background-color: #F4C613;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+  color: #fff;
+}
+
+.about-item:hover hr {
+  background: #fff;
+}
+
+.about-item:hover i {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+}
+
+/* ********* About Part 02 - smooth transition ******* */
+.about-item,
+.about-item i,
+.about-item hr {
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+/* *********************************************
+08. Section: Team
+********************************************* */
+#team-left .vertical-heading {
+  min-height: 16rem;
+}
+
+/* Team members - info */
+.team-member {
+  margin: 8px;
+  position: relative;
+}
+
+.team-member-overlay {
+  background-color: rgba(33, 34, 38, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.team-member-info {
+  width: 100%;
+  height: 100%;
+  margin: 8rem 0;
+}
+
+.team-member-info h6 {
+  color: #F4C613;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.team-member-info p {
+  color: #fff;
+}
+
+.team-member:hover .team-member-overlay {
+  opacity: 1;
+}
+
+/* Team Members: Social Icons */
+ul.social-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul.social-list li {
+  display: inline-block;
+  padding: 0;
+}
+
+ul.social-list li a {
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+  background-color: #3b5998;
+  border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+  background-color: #00aced;
+  border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+  background-color: #dd4b39;
+  border-color: transparent;
+}
+
+/* *********************************************
+09. Section: Team Slider Buttons
+********************************************* */
+/* .owl-theme .owl-nav [class*=owl-], */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  color: #212226 !important;
+  font-size: 40px;
+  margin: 4px;
+  background: none;
+  line-height: 15px;
+  font-weight: 200;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.owl-carousel .owl-nav:hover button.owl-prev,
+.owl-carousel .owl-nav:hover button.owl-next {
+  background: none;
+  color: #212226 !important;
+  outline: none;
+}
+
+/* *********************************************
+10. Section: Skillset
+********************************************* */
+/*  */
+.skill:first-child {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.skill h4 {
+  line-height: 6.2rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.progress {
+  height: 2.5rem;
+  border-radius: 0;
+  background-color: #efefef;
+  overflow: visible;
+}
+
+.progress-bar {
+  background-color: #F4C613;
+  position: relative;
+}
+
+.progress-bar span {
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  background-color: #212226;
+  padding: .3rem;
+  position: absolute;
+  left: 97%;
+  top: -47px;
+}
+
+.progress-bar span:before {
+  content: "";
+  border-top: 8px solid #212226;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 23%;
+}
+
+/* *********************************************
+11. Section: Statement
+********************************************* */
+#statement {
+  background: url("../img/tech/tech-quote.jpg") no-repeat fixed center;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; */
+  background-size: cover;
+}
+
+#statement .content-box-lg {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#statement h3 {
+  color: #fff;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+
+#statement p {
+  font-size: 1.4rem;
+  color: #F4C613;
+  font-family: "Raleway", sans-serif;
+  margin-top: .8rem;
+}
+
+/* *********************************************
+12. Section: Services
+********************************************* */
+#services-01 img {
+  margin: 6rem 0;
+}
+
+.service {
+  margin: 3.5rem 0;
+}
+
+.service .icon {
+  font-size: 4.2rem;
+  margin: 0;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.service:hover .icon {
+  color: #F4C613;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+}
+
+.service h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #F4C613;
+  margin: 0 0 0.6rem 0;
+}
+
+.service:hover h5 {
+  color: #212226;
+}
+
+.service h4 {
+  font-size: 2.4rem;
+  margin: 0 0 .8rem 0;
+}
+
+.service p {
+  line-height: normal;
+}
+
+/* *********************************************
+13. Section: Services 02 with Responsive Tabs
+********************************************* */
+#services-02 {
+  background-color: #F4F4F4;
+}
+
+#services-tabs ul {
+  margin-bottom: 4rem;
+}
+
+#services-tabs ul li {
+  padding: 0.5rem 3rem;
+  /* border: 1px solid #000;
+  border-bottom: none; */
+}
+
+#services-tabs ul li a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #212226;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+/* ********* Tab: Active State ******** */
+.service-tab .col-md-6 {
+  padding: 0;
+}
+
+#services-tabs ul li.r-tabs-state-active a {
+  color: #F4C613;
+  font-weight: 700;
+  border-bottom: 3px solid #F4C613;
+  padding-bottom: 5px;
+  -webkit-transition: border-color 0.5s linear;
+  transition: border-color 0.5s linear;
+}
+
+#services-tabs ul li a:hover {
+  color: #F4C613;
+}
+
+.service-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+  background: #fff;
+  padding: 5.9rem 3rem;
+  min-height: 46.9rem;
+}
+
+.service-tab h2 {
+  font-size: 4.8rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+  font-weight: 100;
+}
+
+.service-tab h3 {
+  font-size: 3.2rem;
+  /* font-weight: normal; */
+  margin-bottom: 3rem;
+}
+
+.service-tab p {
+  line-height: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+/* *********************************************
+14. Section: Portfolio
+********************************************* */
+#portfolio {
+  padding-bottom: 16rem;
+}
+
+#portfolio .vertical-heading {
+  margin-bottom: 5rem;
+}
+
+.row.no-gutters [class*=col-] {
+  padding: 0;
+}
+
+/* Filter styles */
+#isotope-filters {
+  margin-bottom: 1rem;
+  padding: 2rem 0.5rem 2rem 0;
+}
+
+#isotope-filters button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1rem 2.5rem;
+  margin-right: 0.5rem;
+  outline: none;
+  border-color: #bbb;
+  /* text-align: center; */
+}
+
+#isotope-filters button span {
+  display: block;
+  padding-bottom: .5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#isotope-filters button:hover span {
+  color: #F4C613;
+  /* border-bottom: 3px solid #F4C613; */
+}
+
+#isotope-filters button.active span {
+  color: #F4C613;
+  border-bottom: 3px solid #F4C613;
+}
+
+/* Portfolio Image Zoom Effects */
+.portfolio-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Portfolio Overlay Effect */
+.portfolio-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 14, 0.85);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* portfolio item details effect */
+.portfolio-item-details {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+  color: #F4C613;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio-item-details span {
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: .6rem;
+  width: 3rem;
+  margin: 1.1rem auto .5rem auto;
+}
+
+.portfolio-item-details p {
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Show overlay on mouse-over */
+.portfolio-item:hover .portfolio-item-details h3 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-details p {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+  opacity: 1;
+}
+
+/* *********************************************
+15. Section: Testimonials
+********************************************* */
+#testimonials {
+  background-color: #F4F4F4;
+  padding-bottom: 1.5rem;
+  overflow: visible;
+}
+
+#testimonials .vertical-heading {
+  padding: 8rem 0;
+  margin-bottom: 5rem;
+}
+
+#testimonial-slider {
+  background-color: #F4C613;
+  top: -8rem;
+  padding-bottom: 3rem;
+}
+
+.testimonial .row {
+  margin-bottom: 2.5rem;
+}
+
+.testimonial {
+  padding: 2rem 4.5rem 0 4.5rem;
+  color: #fff;
+}
+
+.testimonial h3 {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+
+.testimonial .stars {
+  font-size: 2rem;
+  color: #212226;
+  margin: 2rem 01rem 0;
+}
+
+.testimonial p {
+  line-height: normal;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial .author .author-name-des {
+  width: 13.8rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.testimonial .author .author-name-des p {
+  margin: 0;
+}
+
+/* *********************************************
+16. Section: Pricing Table
+********************************************* */
+.pricing-table {
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 3.2rem 2.1rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.pricing-table:hover {
+  background-color: #F4C613;
+}
+
+.pricing-table .type h4 {
+  color: #F4C613;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-table .price {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 2.4rem 0;
+}
+
+.pricing-table .price h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 100;
+  margin: 0 0 0 2.4rem;
+  position: relative;
+}
+
+.pricing-table .price h2 span {
+  font-family: 'Raleway', sans-serif;
+}
+
+.pricing-table .price h2 span.dollar {
+  font-size: 1.8rem;
+  font-weight: 300;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.9rem;
+}
+
+.pricing-table .price h2 span.month {
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: absolute;
+  left: 0.2rem;
+  bottom: -1.2rem;
+}
+
+.pricing-table .price p {
+  line-height: normal;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+/* Package List */
+.pricing-table ul.package {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.pricing-table ul.package li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.pricing-table ul.package li i {
+  width: 2.4rem;
+}
+
+.pricing-table .btn-yellow,
+.pricing-table .btn-white {
+  width: 96%;
+}
+
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package {
+  color: #fff;
+}
+
+.pricing-table:hover .btn-yellow {
+  background-color: #fff;
+  color: #212226;
+  border: 1px solid #fff;
+}
+
+.pricing-table .btn-yellow:hover,
+.pricing-table .btn-yellow:focus {
+  background-color: #212226;
+  color: #fff;
+  border: 1px solid #212226;
+}
+
+/* Second Pricing Table */
+.pricing-table.black {
+  background-color: #212226;
+  color: #fff;
+}
+
+.pricing-table.black .type h4 {
+  color: #fff;
+}
+
+.pricing-table.black:hover {
+  background-color: #F4C613;
+}
+
+/* *********************************************
+17. Section: Stats
+********************************************* */
+#stats {
+  background: url("../img/stats/stats-bg.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#stats .content-box-md {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#stats .vertical-heading h2 {
+  color: #fff;
+}
+
+#stats .stats-item {
+  background-color: rgba(61, 68, 68, 0.5);
+  border-radius: 0.5rem;
+  min-height: 17rem;
+  padding: 2.5rem 5rem;
+  margin-top: 5rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#stats .stats-item i {
+  font-size: 4.2rem;
+  color: #F4C613;
+  margin-bottom: 0.6rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#stats .stats-item h3 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+#stats .stats-item p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#stats .stats-item:hover {
+  background-color: #F4C613;
+}
+
+#stats .stats-item:hover i {
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
+  color: #212226;
+}
+
+/* *********************************************
+18. Section: Clients
+********************************************* */
+#clients .horizontal-heading {
+  margin-bottom: 3rem;
+}
+
+#clients #clients-list {
+  padding: 4.5rem 0 0 0;
+}
+
+#clients .client {
+  padding: 0 1rem;
+  max-width: 15rem;
+  margin: 0 auto;
+  line-height: 10rem;
+}
+
+#clients img {
+  display: inline-block !important;
+}
+
+/* *********************************************
+19. Section: Blog
+********************************************* */
+#blog {
+  background-color: #F4F4F4;
+}
+
+#blog #blog-left p {
+  margin: 2.5rem 0;
+}
+
+#blog #blog-btn a {
+  margin: 0;
+}
+
+#blog .blog-post {
+  background-color: #fff;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+}
+
+#blog .blog-post h4 {
+  line-height: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+#blog .blog-post > p {
+  line-height: 2.4rem;
+  font-weight: 300;
+}
+
+#blog .blog-post a {
+  display: inline-block;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: #F4C613;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  border: 1px solid #F4C613;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+#blog .blog-post a:hover {
+  color: #fff;
+  background-color: #F4C613;
+}
+
+#blog .post-meta {
+  border-top: 1px solid #E0E0E0;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+#blog .post-meta p {
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* *********************************************
+19. Section: Contact
+********************************************* */
+/* 19.a - Left Side */
+#contact-left p {
+  margin: 2.5rem 0 2.0rem 0;
+}
+
+ul.office-details {
+  list-style: none;
+  padding: 0;
+}
+
+ul.office-details li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
