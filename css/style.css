@@ -1214,3 +1214,19 @@ ul.office-details li i {
 #map {
   height: 60rem;
 }
+
+/* *********************************************
+21. Section: Footer
+********************************************* */
+footer {
+  background: #212226;
+  padding: 3rem 3rem 2.5rem 3rem;
+}
+footer p {
+  color: #fff;
+  line-height: 2rem;
+  font-weight: 300;
+}
+footer p span {
+  color: #F4C613;
+}
