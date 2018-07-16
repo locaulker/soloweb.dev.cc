@@ -8,6 +8,7 @@
 07. Owl-Carousel: Testimonials/Quality Support
 08. jQuery CounterUP Plugin
 09. Owl-Carousel: Clients Section
+10. Google Map
 */
 
 /* ****************************************************
@@ -156,3 +157,35 @@ $(function(){
 });
 
 
+/* *********************************************
+  10. Google Map Section:
+  ********************************************* */
+ $(window).on('load', function(){
+  var addressString = '230 Broadway, New York, NY 10007, USA';
+  var myLatLng = {lat: 40.712742, lng: -74.005969};
+
+  // 1. Render Google Map
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: myLatLng   
+    });
+
+  // 2. Add Marker
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Click to View Address'
+  });
+
+  // 3. Add Info Window
+  var infoWindow = new google.maps.InfoWindow({
+    content: addressString
+  });
+
+  // 4. Display Info Window when user clicks on Marker
+  marker.addListener('click', function() {
+    infoWindow.open(map, marker);
+  });
+  
+  
+});

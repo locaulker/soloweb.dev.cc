@@ -31,6 +31,7 @@
 17. Section: Stats
 18. Section: Clients
 19. Section: Blog
+20. Section: Google Map
 ********************************************* */
 /* *********************************************
 01. Global/Generic Styles: html, body
@@ -1205,4 +1206,11 @@ ul.office-details li i {
 }
 #contact-right form textarea.form-control {
   min-height: 16.4rem;
+}
+
+/* *********************************************
+20. Section: Google Map
+********************************************* */
+#map {
+  height: 60rem;
 }
