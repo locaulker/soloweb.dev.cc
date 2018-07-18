@@ -9,6 +9,7 @@
 08. jQuery CounterUP Plugin
 09. Owl-Carousel: Clients Section
 10. Google Map
+11. Show/Hide White Navigation Bar
 */
 
 /* ****************************************************
@@ -188,4 +189,26 @@ $(function(){
   });
   
   
+});
+
+
+/* document onload function */
+$(function() {
+/* *********************************************
+  11. Show/Hide White Navigation Bar:
+  ********************************************* */
+  $(window).scroll(function() {
+  
+    if($(window).scrollTop() > 50 ) {
+      // Show White Nav Bar
+      // alert("Scroll position is > 50px. Your scroll position is: " + $(window).scrollTop());
+      $("nav").addClass("white-nav-top");
+    } else {
+      // Hide White Nav Bar
+      // alert("Scroll position is NOT > 50px. Your scroll position is: " + $(window).scrollTop());
+      $("nav").removeClass("white-nav-top");
+    }
+
+  });
+
 });

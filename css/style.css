@@ -32,6 +32,8 @@
 18. Section: Clients
 19. Section: Blog
 20. Section: Google Map
+21. Section: Footer
+22. Section: Top Navigation Bar
 ********************************************* */
 /* *********************************************
 01. Global/Generic Styles: html, body
@@ -1228,5 +1230,46 @@ footer p {
   font-weight: 300;
 }
 footer p span {
+  color: #F4C613;
+}
+
+/* *********************************************
+22. Section: Top Navigation Bar
+********************************************* */
+.navbar {
+  padding: 3.5rem 0 2rem 0;
+}
+.site-nav-wrapper {
+  padding: 0 8.5rem;
+}
+.navbar-brand {
+  padding: 1.3rem 1.5rem;
+}
+ul.navbar-nav > li > a {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+  background: none;
+  color: #F4C613;
+}
+
+/* White Nav Bar */
+.white-nav-top {
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 8px 6px -9px #999;
+  z-index: 2;
+}
+.white-nav-top ul.navbar-nav > li > a {
+  color: #212226;
+}
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:focus {
   color: #F4C613;
 }
