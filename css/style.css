@@ -1238,6 +1238,7 @@ footer p span {
 ********************************************* */
 .navbar {
   padding: 3.5rem 0 2rem 0;
+  transition: .4s linear;
 }
 .site-nav-wrapper {
   padding: 0 8.5rem;

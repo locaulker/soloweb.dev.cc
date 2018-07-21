@@ -197,18 +197,31 @@ $(function() {
 /* *********************************************
   11. Show/Hide White Navigation Bar:
   ********************************************* */
+  showHideNav();
+
+  // Show/Hide Nav on Page load
   $(window).scroll(function() {
-  
-    if($(window).scrollTop() > 50 ) {
+    // Show nav on window's scroll
+    showHideNav();
+  });
+
+  // Sho/Hide Navigation
+  function showHideNav() {
+    if( $(window).scrollTop() > 50 ) {
       // Show White Nav Bar
       // alert("Scroll position is > 50px. Your scroll position is: " + $(window).scrollTop());
       $("nav").addClass("white-nav-top");
+
+      // Also Show Dark Logo
+      $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
     } else {
       // Hide White Nav Bar
       // alert("Scroll position is NOT > 50px. Your scroll position is: " + $(window).scrollTop());
       $("nav").removeClass("white-nav-top");
-    }
 
-  });
+      // Also Show Normal Logo
+      $(".navbar-brand img").attr("src", "img/logo/logo.png");
+    }
+  }
 
 });
