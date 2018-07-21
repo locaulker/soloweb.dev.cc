@@ -34,6 +34,7 @@
 20. Section: Google Map
 21. Section: Footer
 22. Section: Top Navigation Bar
+23. Section: List Items with .active Class added
 ********************************************* */
 /* *********************************************
 01. Global/Generic Styles: html, body
@@ -1273,4 +1274,13 @@ ul.navbar-nav > li > a:focus {
 .white-nav-top ul.navbar-nav > li > a:hover,
 .white-nav-top ul.navbar-nav > li > a:focus {
   color: #F4C613;
+}
+
+/* *********************************************
+23. Section: List Items with .active Class added
+********************************************* */
+.white-nav-top ul.navbar-nav > li.active > a {
+  color: #F4C613;
+  font-weight: 500;
+  transform: scale(1.2);
 }
