@@ -243,6 +243,17 @@ section {
   color: #F4C613;
 }
 
+.btn-back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  padding: 3px 15px;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: normal;
+  display: none;
+}
+
 /* *********************************************
 05. Content Boxes
 ********************************************* */

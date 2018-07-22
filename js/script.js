@@ -214,6 +214,10 @@ $(function() {
 
       // Also Show Dark Logo
       $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+
+      // Show back-to-top button
+      $("#back-to-top").fadeIn();
+
     } else {
       // Hide White Nav Bar
       // alert("Scroll position is NOT > 50px. Your scroll position is: " + $(window).scrollTop());
@@ -221,6 +225,9 @@ $(function() {
 
       // Also Show Normal Logo
       $(".navbar-brand img").attr("src", "img/logo/logo.png");
+
+      // Hide back-to-top button
+      $("#back-to-top").fadeOut();
     }
   }
 
