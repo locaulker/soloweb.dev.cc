@@ -1,0 +1,41 @@
+/*
+01. Devices: Large Devices (Desktops & Laptops)
+02. Medium Devices: Landscape Tablets & Medium desktops
+03. Small Devices: Portrait Tablets & Small Desktops
+*/
+
+/* *********************************************
+01. Devices: Large Devices (Desktops & Laptops)
+********************************************* */
+@media (min-width: 1200px) {
+  #home-heading h1 {
+    color: aqua;
+  }
+}
+
+/* *********************************************
+02. Medium Devices: Landscape Tablets & Medium desktops
+********************************************* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #home-heading h1 {
+    color: red;
+  }
+}
+
+/* *********************************************
+03. Small Devices: Portrait Tablets & Small Desktops
+********************************************* */
+@media (min-width: 768px) and (max-width: 991px) {
+  #home-heading h1 {
+    color: greenyellow;
+  }
+}
+
+/* *********************************************
+04. Xtra Small Devices: Landscape Phones & Portrait tablets
+********************************************* */
+@media (max-width: 767px) {
+  #home-heading h1 {
+    color: mediumslateblue;
+  }
+}

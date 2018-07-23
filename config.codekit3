@@ -109,6 +109,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/media-queries.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/media-queries-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/owl-carousel\/owl.carousel.min.css": {
 		"aP": 1,
 		"bl": 0,
