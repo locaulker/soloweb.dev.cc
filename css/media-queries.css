@@ -7,9 +7,13 @@
 /* *********************************************
 01. Devices: Large Devices (Desktops & Laptops)
 ********************************************* */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1299px) {
   #home-heading h1 {
     color: aqua;
+  }
+  /* Navigation bar */
+  .site-nav-wrapper {
+    padding: 0 2rem;
   }
 }
 
@@ -20,6 +24,26 @@
   #home-heading h1 {
     color: red;
   }
+  /* Navigation bar */
+  .site-nav-wrapper {
+    padding: 0;
+  }
+  /* Generic */
+  .vertical-heading h2 {
+    font-size: 2.9rem;
+  }
+  /* Services 02 */
+  #services-tabs .tab-bg {
+    padding: 1.9rem 3rem;
+    min-height: 382px;
+  }
+  .service-tab h2 {
+    font-size: 3.9rem;
+  }
+  .service-tab p {
+    line-height: 2.2rem;
+  }
+
 }
 
 /* *********************************************
@@ -28,6 +52,94 @@
 @media (min-width: 768px) and (max-width: 991px) {
   #home-heading h1 {
     color: greenyellow;
+  }
+  /* Navigation bar */
+  .site-nav-wrapper {
+    padding: 0;
+  }
+  /* Home section */
+  #home-heading h1 {
+    font-size: 4.1rem;
+  }
+  #home-text p {
+    font-size: 1.3rem;
+  }
+  .btn-general {
+    padding: 8px 35px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /* Generic */
+  .vertical-heading h2 {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+  }
+  /* Text Statement */
+  #tech-statement h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #tech-statement h3 .fa {
+    color: #F4C613;
+  }
+  /* Services 02 */
+  .r-tabs-accordion-title {
+    text-align: center;
+    margin: 0 5px 10px 5px;
+    background-color: #F4C613;
+    padding: 20px 0;
+    border-radius: 5px;
+  }
+  .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: none;
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
+  /* Tab active state */
+  .r-tabs-accordion-title.r-tabs-state-active a {
+    /* color: #F4C613; */
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 3px solid #F4C613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 0.5s linear;
+    transition: border-color 0.5s linear;
+  }
+  /* Pricing Table */
+  .pricing-table .price h2 {
+    margin: 0 0 0 6px;
+    font-size: 35px;
+  }
+  .pricing-table .price p {
+    line-height: 18px;
+    font-size: 15px;
+  }
+  .pricing-table ul.package li {
+    line-height: 30px;
+  }
+  /* Stats */
+  .stats-item p {
+    line-height: 18px;
+  }
+  /* Blog */
+  #blog .vertical-heading {
+    margin-bottom: 60px;
+  } 
+  /* Contact */
+  #contact-left p {
+    margin-top: 60px;
+  } 
+  #contact-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 0.6rem 1.5rem .8rem 1.5rem;
+    font-size: 1.4rem;
+    line-height: normal;
   }
 }
 

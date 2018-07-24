@@ -69,7 +69,17 @@ $(function(){
     nav: true,
     dots: false,
     // navText: ['&larr;','&rarr;'],
-    // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+    // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      // breakpoint from 0 an Up
+      0: {
+        items: 1
+      },
+      // breakpoint from 480 an Up
+      480: {
+        items: 2
+      }
+    }
   });
 
 

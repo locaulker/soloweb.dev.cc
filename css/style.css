@@ -151,7 +151,7 @@ section {
   ---------------------------------- */
 #home-heading h1 {
   color: #fff;
-  font-size: 4.0625rem;
+  font-size: 5.0625rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
@@ -288,7 +288,7 @@ section {
 
 .horizontal-heading h2,
 .vertical-heading h2 {
-  font-size: 2.9rem;
+  font-size: 3.9rem;
   font-weight: 100;
   line-height: 4.5rem;
 }
