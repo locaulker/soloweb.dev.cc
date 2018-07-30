@@ -2,6 +2,9 @@
 01. Devices: Large Devices (Desktops & Laptops)
 02. Medium Devices: Landscape Tablets & Medium desktops
 03. Small Devices: Portrait Tablets & Small Desktops
+04. Xtra Small Devices(1): Landscape Phones & Portrait tablets
+05. Xtra Small Devices(2): Portrait Phones & Smaller Devices
+06. Xtra Small Devices(3): Portrait Phones & Smaller Devices
 */
 
 /* *********************************************
@@ -144,7 +147,7 @@
 }
 
 /* *********************************************
-04. Xtra Small Devices: Landscape Phones & Portrait tablets
+04. Xtra Small Devices(1): Landscape Phones & Portrait tablets
 ********************************************* */
 @media (max-width: 767px) {
   #home-heading h1 {
@@ -331,4 +334,124 @@
     width: 80px !important;
   }
 
+  /* Pricing Tables */
+  .pricing-table {
+    margin-bottom: 30px;
+  }
+  .pricing-table .price h2 {
+    font-size: 28px;
+    margin: 0 0 0 16px;
+  }
+  .pricing-table .price h2 .dollar {
+    margin-top: -4px;
+  }
+
+  /* Stats Section */
+  .stats-item {
+    padding: 25px 5px;
+    margin-bottom: -10px;
+  }
+  .stats-item i {
+    font-size: 30px;
+  }
+  .stats-item h3 {
+    font-size: 24px;
+  }
+
+  /* Blog Section */
+  #blog-left {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .blog-post {
+    margin-bottom: 25px;
+  }
+
+  /* Contact Section */
+  #contact p {
+    font-size: 15px;
+  }
+  #contact h4 {
+    font-size: 20px;
+    font-variant-caps: small-caps;
+  }
+  #contact #office {
+    text-align: left;
+    font-size: 13px;
+  }
+  #contact #office li {
+    margin: 6px;
+  }
+  ul.social-list {
+    margin-bottom: 40px;
+  }
+
+}
+
+
+/* *********************************************
+05. Xtra Small Devices(2): Portrait Phones & Smaller Devices
+********************************************* */
+@media (max-width: 480px) {
+  /* Horizontal Headings */
+  .horizontal-heading {
+    margin-bottom: 30px;
+  }
+  .vertical-heading h2,
+  .horizontal-heading h2 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  /* Portfolio */
+  #isotope-filters {
+    text-align: center;
+    margin: -20px 0 5px 0;
+  }
+  #isotope-filters button {
+    font-size: 10px;
+  }
+  /* Stats Section */
+  .stats-item {
+    padding: 5px 5px;
+    margin-bottom: 0 0 -10px 0;
+  }
+  .stats-item i {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .stats-item h3.counter {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+}
+
+/* *********************************************
+06. Xtra Small Devices(3): Portrait Phones & Smaller Devices
+********************************************* */
+@media (max-width: 320px) {
+  .testimonial h3 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .testimonial .stars {
+    font-size: 8px;
+  }
+  #isotope-filters button {
+    font-size: 10px;
+  }
+  /* Stats Section */
+  .stats-item {
+    padding: 0;
+    margin: 0;
+
+  }
+  .stats-item i {
+    font-size: 9px;
+    font-weight: normal;
+  }
+  .stats-item h3.counter {
+    font-size: 6px;
+    font-weight: normal;
+  }
 }
